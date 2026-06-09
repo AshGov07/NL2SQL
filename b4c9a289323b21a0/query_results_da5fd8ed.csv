@@ -1,0 +1,3 @@
+employeeNumber,lastName,firstName,extension,email,officeCode,reportsTo,jobTitle
+1002,Murphy,Diane,x5800,dmurphy@classicmodelcars.com,1,,President
+1056,Patterson,Mary,x4611,mpatterso@classicmodelcars.com,1,1002.0,VP Sales

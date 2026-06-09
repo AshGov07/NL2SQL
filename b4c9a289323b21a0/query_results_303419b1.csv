@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,address_id
+1,MARY,SMITH,MARY.SMITH@sakilacustomer.org,5
+2,PATRICIA,JOHNSON,PATRICIA.JOHNSON@sakilacustomer.org,6
+3,LINDA,WILLIAMS,LINDA.WILLIAMS@sakilacustomer.org,7
+4,BARBARA,JONES,BARBARA.JONES@sakilacustomer.org,8
+5,ELIZABETH,BROWN,ELIZABETH.BROWN@sakilacustomer.org,9
+6,JENNIFER,DAVIS,JENNIFER.DAVIS@sakilacustomer.org,10
+7,MARIA,MILLER,MARIA.MILLER@sakilacustomer.org,11
+8,SUSAN,WILSON,SUSAN.WILSON@sakilacustomer.org,12
+9,MARGARET,MOORE,MARGARET.MOORE@sakilacustomer.org,13
+10,DOROTHY,TAYLOR,DOROTHY.TAYLOR@sakilacustomer.org,14

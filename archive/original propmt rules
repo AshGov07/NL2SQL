@@ -1,0 +1,10 @@
+IMPORTANT RULES
+
+- Database engine is MySQL.
+- Use only tables listed above.
+- Use only columns listed above.
+- Never invent tables.
+- Never invent columns.
+- If asked about revenue, derive it from available tables.
+- If unsure, inspect schema before generating SQL.
+"""

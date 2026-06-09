@@ -1,0 +1,9 @@
+[
+    {
+        "question": "Show customers with above-average rental frequency",
+        "generated_sql": "WITH CustomerRentalCounts AS (\n    SELECT \n        customer_id, \n        COUNT(rental_id) AS rental_count\n    FROM \n        rental\n    GROUP BY \n        customer_id\n)\nSELECT \n    c.customer_id, \n    c.first_name, \n    c.last_name, \n    cr.rental_count\nFROM \n    customer c\nJOIN \n    CustomerRentalCounts cr \n    ON c.customer_id = cr.customer_id\nWHERE \n    cr.rental_count > (\n        SELECT \n            AVG(rental_count)\n        FROM \n            CustomerRentalCounts\n    );",
+        "repaired_sql": "WITH CustomerRentalCounts AS (\n    SELECT \n        customer_id, \n        COUNT(rental_id) AS rental_count\n    FROM \n        rental\n    GROUP BY \n        customer_id\n)\nSELECT \n    c.customer_id, \n    c.first_name, \n    c.last_name, \n    cr.rental_count\nFROM \n    customer c\nJOIN \n    CustomerRentalCounts cr \n    ON c.customer_id = cr.customer_id\nWHERE \n    cr.rental_count > (\n        SELECT \n            AVG(rental_count)\n        FROM \n            CustomerRentalCounts\n    );",
+        "error": "Unknown column customerrentalcounts.rental_count",
+        "execution_time_seconds": 23.6
+    }
+]

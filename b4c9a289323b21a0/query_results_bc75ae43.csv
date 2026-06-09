@@ -1,0 +1,24 @@
+employeeNumber,firstName,lastName,officeCode,reportsTo
+1002,Diane,Murphy,1,
+1056,Mary,Patterson,1,1002.0
+1076,Jeff,Firrelli,1,1002.0
+1088,William,Patterson,6,1056.0
+1102,Gerard,Bondur,4,1056.0
+1143,Anthony,Bow,1,1056.0
+1165,Leslie,Jennings,1,1143.0
+1166,Leslie,Thompson,1,1143.0
+1188,Julie,Firrelli,2,1143.0
+1216,Steve,Patterson,2,1143.0
+1286,Foon Yue,Tseng,3,1143.0
+1323,George,Vanauf,3,1143.0
+1337,Loui,Bondur,4,1102.0
+1370,Gerard,Hernandez,4,1102.0
+1401,Pamela,Castillo,4,1102.0
+1501,Larry,Bott,7,1102.0
+1504,Barry,Jones,7,1102.0
+1611,Andy,Fixter,6,1088.0
+1612,Peter,Marsh,6,1088.0
+1619,Tom,King,6,1088.0
+1621,Mami,Nishi,5,1056.0
+1625,Yoshimi,Kato,5,1621.0
+1702,Martin,Gerard,4,1102.0
