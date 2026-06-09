@@ -16,9 +16,9 @@
 
 ## Visual Progress
 
-### Pie Chart 
-%%{init: {"themeVariables": {"pie1":"#4CAF50","pie2":"#F44336"}}}%%
-pie showData
-    title Benchmark Progress (39/40 queries)
-    "Passed: 39 (97.5%)" : 39
-    "Missed: 1 (2.5%)" : 1
+Benchmark Progress (39/40 queries)
+┌────────────────────────────────────────┐
+│ Passed: 39 queries (97.5%)  ██████████ │
+│ Missed: 1 query   (2.5%)    █          │
+└────────────────────────────────────────┘
+     ██ Passed (97.5%)   ██ Missed (2.5%)
