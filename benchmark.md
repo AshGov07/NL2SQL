@@ -21,6 +21,6 @@
 %%{init: {"themeVariables": {"pie1":"#4CAF50","pie2":"#F44336"}}}%%
 pie showData
     title Benchmark Progress
-    "Passed" : 39
-    "Remaining" : 1
+    "Passed (97.5%)" : 97.5
+    "Remaining (2.5%)" : 2.5
 
