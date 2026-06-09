@@ -16,11 +16,10 @@
 
 ## Visual Progress
 
-### Pie Chart
+### Pie Chart 
 ```mermaid
 %%{init: {"themeVariables": {"pie1":"#4CAF50","pie2":"#F44336"}}}%%
 pie showData
     title Benchmark Progress
     "Passed (97.5%)" : 97.5
     "Remaining (2.5%)" : 2.5
-
