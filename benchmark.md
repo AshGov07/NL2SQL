@@ -1,22 +1,29 @@
-Current milestone snapshot
-Benchmark
-39 / 40
+# Milestone Snapshot
 
-passed
+## Benchmark Status
+- Passed: 39 / 40
+- Accuracy: 97.5% on Sakila benchmark
+- Average Time: 15.88s per query
 
-Accuracy
-97.5%
+---
 
-on Sakila benchmark
+## Remaining Issue
+- CTE alias validation
+  - Single known issue
+  - Isolated and low risk to fix later
 
-Average Time
-15.88s
+---
+progressBar
+    title Accuracy Progress
+    percent 97.5
 
-per query
+## Visual Progress
 
-Remaining Failure
-CTE alias validation
+### Pie Chart
+```mermaid
+pie showData
+    title Benchmark Progress
+    "Passed" : 39
+    "Remaining" : 1
 
-single known issue
 
-That’s a solid checkpoint. The core validator and repair architecture is already in a good place; the remaining issue is isolated and low risk to fix later.
