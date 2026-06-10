@@ -207,6 +207,7 @@
 
 # query_validator.py
 
+# from test_validator import cte_names
 from _plotly_utils import basevalidators
 import re
 from cte_helper import CTEHelper
@@ -317,7 +318,14 @@ class QueryValidator:
         "coalesce",
 
         "true",
-        "false"
+        "false",
+        "concat",
+        "round",
+        "upper",
+        "lower",
+        "lag",
+        "lead",
+        "date_format"
     }
 
     #old version
@@ -348,7 +356,7 @@ class QueryValidator:
         tables,
         cte_names=None
     ):
-
+        print("ENTERED validate_tables")
         if cte_names is None:
             cte_names = set()
 
@@ -356,6 +364,22 @@ class QueryValidator:
             r'(?:from|join)\s+([a-zA-Z_][a-zA-Z0-9_]*)',
             sql_lower
         )
+
+        # ----------------------------- debugging -----------------------------
+        cte_names = CTEHelper.extract_cte_names(
+            sql_lower
+        )
+
+        print(
+            "Found Tables:",
+            found_tables
+        )
+
+        print(
+            "CTE Tables:",
+            cte_names
+        )        
+        # -------------------------------------------------
 
         for table in found_tables:
 
@@ -615,7 +639,7 @@ class QueryValidator:
 
     @staticmethod
     def validate(sql, schema_df,relationship_df):
-
+        print("START validate")
         sql_lower = sql.lower()
 
         tables = set(
@@ -631,7 +655,8 @@ class QueryValidator:
         )
          #new update
         cte_names = CTEHelper.extract_cte_names(sql_lower)
-        # print("CTE Names:", cte_names)
+        print("CTE Names:", cte_names)
+        print("CALLING validate_tables")
         QueryValidator.validate_tables(
             sql_lower,
             tables,
