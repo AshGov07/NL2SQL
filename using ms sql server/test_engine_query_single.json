@@ -1,0 +1,12 @@
+[
+    {
+        "question": "Show yearly revenue growth percentage by product category",
+        "expected_tables": [
+            "dimdate",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    }
+]

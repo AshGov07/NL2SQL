@@ -1,0 +1,82 @@
+[
+    {
+        "question": "Show customers whose total sales exceed the average customer sales",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show products sold more than the average quantity sold",
+        "expected_tables": [
+            "dimproduct",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show sales by product category",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show total revenue by sales territory",
+        "expected_tables": [
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show top 10 customers by total sales amount",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show monthly sales trend",
+        "expected_tables": [
+            "dimdate",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show product categories with above-average revenue",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers who purchased products from more than 5 categories",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory"
+        ]
+    },
+    {
+        "question": "Show sales territories whose revenue is above the average territory revenue",
+        "expected_tables": [
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show yearly revenue by product category",
+        "expected_tables": [
+            "dimdate",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    }
+]

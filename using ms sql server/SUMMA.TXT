@@ -1,0 +1,17 @@
+VISUALIZATION RULES
+
+Time series:
+- Revenue by month -> line chart
+- Revenue by year -> line chart
+
+Category comparison:
+- Revenue by territory -> bar chart
+- Revenue by category -> bar chart
+
+Part-to-whole:
+- Market share -> pie chart
+
+Top N:
+- Top customers -> horizontal bar chart
+
+Never use scatter plots for aggregated business metrics unless explicitly requested.

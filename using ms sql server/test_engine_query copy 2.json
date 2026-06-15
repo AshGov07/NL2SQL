@@ -1,0 +1,167 @@
+[
+    {
+        "question": "Show customers whose sales increased year over year",
+        "expected_tables": [
+            "dimcustomer",
+            "dimdate",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show product categories with declining revenue year over year",
+        "expected_tables": [
+            "dimdate",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show top 3 products in each category by total sales",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show the highest revenue sales territory for each year",
+        "expected_tables": [
+            "dimsalesterritory",
+            "dimdate",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers whose total sales are in the top 10 percent of all customers",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show products generating 80 percent of total revenue",
+        "expected_tables": [
+            "dimproduct",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers who purchased products from every product category",
+        "expected_tables": [
+            "dimcustomer",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show sales territories whose revenue exceeds the overall average territory revenue by more than 20 percent",
+        "expected_tables": [
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show top 5 customers in each sales territory by revenue",
+        "expected_tables": [
+            "dimcustomer",
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show yearly revenue growth percentage by product category",
+        "expected_tables": [
+            "dimdate",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers who have purchased in every year available in the database",
+        "expected_tables": [
+            "dimcustomer",
+            "dimdate",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show products that were never sold",
+        "expected_tables": [
+            "dimproduct",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show the percentage contribution of each product category to total revenue",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "[Show sales territories ranked by total revenue]",
+        "expected_tables": [
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers whose average order value exceeds the overall average order value",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show the fastest growing product category by year",
+        "expected_tables": [
+            "dimdate",
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show products with sales higher than the average sales of their category",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show the top selling product in each sales territory",
+        "expected_tables": [
+            "dimproduct",
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show customers whose revenue contribution exceeds 5 percent of total company revenue",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show categories whose average product sales exceed the overall category average",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    }
+]

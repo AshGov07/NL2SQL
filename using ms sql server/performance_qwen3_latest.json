@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Show customers whose sales increased year over year",
+        "model": "qwen3:latest",
+        "llm_time": 39.2972,
+        "extract_time": 0.0001,
+        "validation_time": 0.0067,
+        "repair_time": 0,
+        "total_time": 39.3765,
+        "status": "PASS"
+    },
+    {
+        "question": "Show product categories with declining revenue year over year",
+        "model": "qwen3:latest",
+        "llm_time": 24.5612,
+        "extract_time": 0.0,
+        "validation_time": 0.0054,
+        "repair_time": 0,
+        "total_time": 24.8654,
+        "status": "PASS"
+    },
+    {
+        "question": "Show top 3 products in each category by total sales",
+        "model": "qwen3:latest",
+        "llm_time": 31.4152,
+        "extract_time": 0.0,
+        "validation_time": 0.0051,
+        "repair_time": 0,
+        "total_time": 31.4475,
+        "status": "PASS"
+    },
+    {
+        "question": "Show the highest revenue sales territory for each year",
+        "model": "qwen3:latest",
+        "llm_time": 20.7431,
+        "extract_time": 0.0,
+        "validation_time": 0.0048,
+        "repair_time": 0,
+        "total_time": 21.0146,
+        "status": "PASS"
+    },
+    {
+        "question": "Show customers whose total sales are in the top 10 percent of all customers",
+        "model": "qwen3:latest",
+        "llm_time": 39.2076,
+        "extract_time": 0.0,
+        "validation_time": 0.0039,
+        "repair_time": 0,
+        "total_time": 39.2295,
+        "status": "PASS"
+    },
+    {
+        "question": "Show products generating 80 percent of total revenue",
+        "model": "qwen3:latest",
+        "llm_time": 65.8441,
+        "extract_time": 0.0,
+        "validation_time": 0.0035,
+        "repair_time": 0,
+        "total_time": 66.1849,
+        "status": "PASS"
+    },
+    {
+        "question": "Show customers who purchased products from every product category",
+        "model": "qwen3:latest",
+        "llm_time": 28.7707,
+        "extract_time": 0.0,
+        "validation_time": 0.0067,
+        "repair_time": 0,
+        "total_time": 28.9978,
+        "status": "PASS"
+    },
+    {
+        "question": "Show sales territories whose revenue exceeds the overall average territory revenue by more than 20 percent",
+        "model": "qwen3:latest",
+        "llm_time": 26.1362,
+        "extract_time": 0.0,
+        "validation_time": 0.0042,
+        "repair_time": 0,
+        "total_time": 26.3091,
+        "status": "PASS"
+    },
+    {
+        "question": "Show top 5 customers in each sales territory by revenue",
+        "model": "qwen3:latest",
+        "llm_time": 19.8638,
+        "extract_time": 0.0,
+        "validation_time": 0.0062,
+        "repair_time": 0,
+        "total_time": 20.0706,
+        "status": "PASS"
+    },
+    {
+        "question": "Show yearly revenue growth percentage by product category",
+        "model": "qwen3:latest",
+        "llm_time": 14.4166,
+        "extract_time": 0.0001,
+        "validation_time": 0.0053,
+        "repair_time": 0,
+        "total_time": 14.626,
+        "status": "PASS"
+    },
+    {
+        "question": "Show customers who have purchased in every year available in the database",
+        "model": "qwen3:latest",
+        "llm_time": 28.4696,
+        "extract_time": 0.0,
+        "validation_time": 0.0031,
+        "repair_time": 0,
+        "total_time": 28.4959,
+        "status": "PASS"
+    },
+    {
+        "question": "Show products that were never sold",
+        "model": "qwen3:latest",
+        "llm_time": 19.1834,
+        "extract_time": 0.0,
+        "validation_time": 0.0034,
+        "repair_time": 0,
+        "total_time": 19.2212,
+        "status": "PASS"
+    },
+    {
+        "question": "Show the percentage contribution of each product category to total revenue",
+        "model": "qwen3:latest",
+        "llm_time": 15.802,
+        "extract_time": 0.0,
+        "validation_time": 0.0044,
+        "repair_time": 0,
+        "total_time": 16.1276,
+        "status": "PASS"
+    },
+    {
+        "question": "Show sales territories ranked by total revenue",
+        "model": "qwen3:latest",
+        "llm_time": 24.1468,
+        "extract_time": 0.0,
+        "validation_time": 0.0036,
+        "repair_time": 0,
+        "total_time": 24.3813,
+        "status": "PASS"
+    },
+    {
+        "question": "Show customers whose average order value exceeds the overall average order value",
+        "model": "qwen3:latest",
+        "llm_time": 23.3339,
+        "extract_time": 0.0,
+        "validation_time": 0.0049,
+        "repair_time": 0,
+        "total_time": 23.3704,
+        "status": "PASS"
+    },
+    {
+        "question": "Show the fastest growing product category by year",
+        "model": "qwen3:latest",
+        "llm_time": 27.0343,
+        "extract_time": 0.0,
+        "validation_time": 0.0057,
+        "repair_time": 0,
+        "total_time": 27.4619,
+        "status": "PASS"
+    },
+    {
+        "question": "Show products with sales higher than the average sales of their category",
+        "model": "qwen3:latest",
+        "llm_time": 39.2937,
+        "extract_time": 0.0,
+        "validation_time": 0.0056,
+        "repair_time": 0,
+        "total_time": 39.5689,
+        "status": "PASS"
+    },
+    {
+        "question": "Show the top selling product in each sales territory",
+        "model": "qwen3:latest",
+        "llm_time": 22.9655,
+        "extract_time": 0.0,
+        "validation_time": 0.0054,
+        "repair_time": 0,
+        "total_time": 23.6967,
+        "status": "PASS"
+    },
+    {
+        "question": "Show customers whose revenue contribution exceeds 5 percent of total company revenue",
+        "model": "qwen3:latest",
+        "llm_time": 17.7695,
+        "extract_time": 0.0,
+        "validation_time": 0.0235,
+        "repair_time": 0,
+        "total_time": 18.0403,
+        "status": "PASS"
+    },
+    {
+        "question": "Show categories whose average product sales exceed the overall category average",
+        "model": "qwen3:latest",
+        "llm_time": 33.1768,
+        "extract_time": 0.0,
+        "validation_time": 0.0414,
+        "repair_time": 0,
+        "total_time": 33.4284,
+        "status": "PASS"
+    }
+]

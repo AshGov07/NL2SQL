@@ -1,0 +1,305 @@
+[
+    {
+        "question": "Show all customers",
+        "expected_tables": [
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Show all products",
+        "expected_tables": [
+            "DimProduct"
+        ]
+    },
+    {
+        "question": "Show all sales territories",
+        "expected_tables": [
+            "DimSalesTerritory"
+        ]
+    },
+    {
+        "question": "Show all currencies",
+        "expected_tables": [
+            "DimCurrency"
+        ]
+    },
+    {
+        "question": "Show all promotions",
+        "expected_tables": [
+            "DimPromotion"
+        ]
+    },
+    {
+        "question": "Show all dates",
+        "expected_tables": [
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Show all employees",
+        "expected_tables": [
+            "DimEmployee"
+        ]
+    },
+    {
+        "question": "Show all resellers",
+        "expected_tables": [
+            "DimReseller"
+        ]
+    },
+    {
+        "question": "Show all product categories",
+        "expected_tables": [
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Show all product subcategories",
+        "expected_tables": [
+            "DimProductSubcategory"
+        ]
+    },
+    {
+        "question": "Show top 10 customers by sales",
+        "expected_tables": [
+            "DimCustomer",
+            "FactInternetSales"
+        ]
+    },
+    {
+        "question": "Show total sales by year",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Show revenue by sales territory",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimSalesTerritory"
+        ]
+    },
+    {
+        "question": "Show revenue by promotion",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimPromotion"
+        ]
+    },
+    {
+        "question": "Show total quantity sold by product",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct"
+        ]
+    },
+    {
+        "question": "Show average sales amount per customer",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Show monthly sales trend",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Show sales by product category",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Show top selling products",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct"
+        ]
+    },
+    {
+        "question": "Show sales by customer geography",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer",
+            "DimGeography"
+        ]
+    },
+    {
+        "question": "Show products sold more than the average quantity sold",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct"
+        ]
+    },
+    {
+        "question": "Show customers whose total purchases exceed the average customer purchase amount",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Show territories whose revenue exceeds the average territory revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimSalesTerritory"
+        ]
+    },
+    {
+        "question": "Show product categories whose revenue exceeds average category revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Find customers with above-average purchase frequency",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Show top 10 customers contributing the highest revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Find products generating more revenue than the average product",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct"
+        ]
+    },
+    {
+        "question": "Show revenue contribution percentage by product category",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Find customers who purchased products from every category",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Show territories ranked by total revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimSalesTerritory"
+        ]
+    },
+    {
+        "question": "Find customers whose purchases increased month over month",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Find top 5 product categories contributing 80 percent of total revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Show products purchased by customers from every territory",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimCustomer",
+            "DimSalesTerritory"
+        ]
+    },
+    {
+        "question": "Find customers who purchased products from only a single category",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Show categories whose average revenue per sale exceeds the overall average",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory"
+        ]
+    },
+    {
+        "question": "Find territories whose revenue growth exceeds overall revenue growth",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimSalesTerritory",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Find products with increasing sales for three consecutive months",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Find customers with purchases in every calendar year",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Show product categories with declining revenue year over year",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimProduct",
+            "DimProductSubcategory",
+            "DimProductCategory",
+            "DimDate"
+        ]
+    },
+    {
+        "question": "Find the most valuable customers by lifetime revenue",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    },
+    {
+        "question": "Find customers whose average order value exceeds the overall average order value",
+        "expected_tables": [
+            "FactInternetSales",
+            "DimCustomer"
+        ]
+    }
+]

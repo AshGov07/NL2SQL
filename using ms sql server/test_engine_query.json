@@ -1,0 +1,69 @@
+[
+    {
+        "question": "Show all customers",
+        "expected_tables": [
+            "dimcustomer"
+        ]
+    },
+    {
+        "question": "Show customer emails",
+        "expected_tables": [
+            "dimcustomer"
+        ]
+    },
+    {
+        "question": "Show all products",
+        "expected_tables": [
+            "dimproduct"
+        ]
+    },
+    {
+        "question": "Show all product categories",
+        "expected_tables": [
+            "dimproductcategory"
+        ]
+    },
+    {
+        "question": "Show all sales territories",
+        "expected_tables": [
+            "dimsalesterritory"
+        ]
+    },
+    {
+        "question": "Show top 10 customers by sales",
+        "expected_tables": [
+            "dimcustomer",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show top 10 products by sales amount",
+        "expected_tables": [
+            "dimproduct",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show total sales by territory",
+        "expected_tables": [
+            "dimsalesterritory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show sales by product category",
+        "expected_tables": [
+            "dimproduct",
+            "dimproductsubcategory",
+            "dimproductcategory",
+            "factinternetsales"
+        ]
+    },
+    {
+        "question": "Show monthly sales trend",
+        "expected_tables": [
+            "dimdate",
+            "factinternetsales"
+        ]
+    }
+]
